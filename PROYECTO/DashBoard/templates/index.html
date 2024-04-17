@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="icon" type="image/png" href="static/icon.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            display: flex; /* Usar flexbox */
+            overflow-x: hidden; /* Ocultar el scroll horizontal */
+        }
+
+        /* Agregamos @font-face para cargar la fuente */
+        @font-face {
+            font-family: 'Poppins';
+            src: url('fuente/poppins.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 200px;
+            background-color: #333;
+            color: white;
+            padding-top: 20px;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 150px; /* ajusta el tamaño del logo según sea necesario */
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: block;
+            width: 100%; /* El botón ocupará todo el ancho del sidebar */
+            margin: 10px auto;
+            padding: 10px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: transparent; /* Fondo transparente por defecto */
+            transition: background-color 0.3s; /* Transición suave del color de fondo */
+        }
+
+        .button:hover {
+            background-color: rgba(255, 255, 255, 0.1); /* Cambia el color de fondo al pasar el mouse */
+        }
+
+        /* Estilos para el texto como botón */
+        .button-text {
+            display: block;
+            width: 150px; /* ajusta el ancho según sea necesario */
+            margin: 0 auto;
+            padding: 10px;
+            border: 2px solid white; /* añadimos un borde blanco */
+            border-radius: 5px;
+            text-align: center; /* centrar el texto */
+            background-image: linear-gradient(to right, #ff0000, #0000ff); /* degradado de rojo a azul */
+            color: transparent;
+            -webkit-background-clip: text; /* aplicar el degradado al texto */
+            background-clip: text;
+            user-select: none;
+        }
+
+        .spams {
+            display: block;
+            text-align: center; /* centrar el texto */
+            margin-top: 180%; /* Mover hacia abajo */
+            user-select: none;
+        }
+
+        .main-content {
+            /* Estilos del contenido principal */
+            margin-left: 200px; /* Deja espacio para el sidebar */
+            /*background-color: #FFFFFF;*/
+            padding: 20px; /* Agrega relleno */
+            height: calc(100vh - 20px); /* Ocupa el 100% de la altura visible */
+            width: calc(100% - 200px); /* Ajusta el ancho del main-content */
+            overflow-y: auto; /* Añade scroll vertical si el contenido excede la altura */
+        }
+
+        canvas {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2 class="button-text">DASHBOARD</h2>
+        <button class="button" onclick="b_grafico_senal()">GRAFICAS POR SEÑAL</button>
+        <button class="button" onclick="b_grafico_banda()">GRAFICAS POR CANAL</button>
+        <button class="button">Botón 3</button>
+        <span class="spams">NetAplication V2</span>
+    </div>
+
+    <div class="main-content" style="position: relative;">
+        <img id="background-img" src="static/bg.jpg" alt="Fondo" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -1;">
+
+        <!-- Espacio para los gráficos generados dinámicamente -->
+        <canvas id="grafico_senal" style="display: none;"></canvas>
+        <canvas id="grafico_senal_pie" style="display: none;"></canvas>
+
+        <!-- Espacio botones -->
+        <div>
+            <button class="button" id="button-back1" onclick="mostrarGraficoAnterior()" style="background-color: #333;; position: absolute; bottom: 13px; left: 20px; width: 100px; height: 30px; display: none; text-align: center;">Anterior</button>
+            <button class="button" id="button-next1" onclick="mostrarGraficoSiguiente()" style="background-color: #333;; position: absolute; bottom: 13px; right: 20px; width: 100px; height:30px; display: none; text-align: center;">Siguiente</button>
+        </div>
+    </div>
+    <script>
+        var nombres = {{ nombres|tojson }};
+        var bssid = {{ bssid|tojson }};
+        var senal = {{ senal|tojson }};
+        var canal = {{ canal|tojson }};
+        var frecuencia = {{ frecuencia|tojson }};
+        var banda = {{ banda|tojson }};
+        var seguridad = {{ seguridad|tojson }};
+
+        var factor = 2; // Puedes ajustar este valor según sea necesario
+        for (var i = 10; i < senal.length; i++) {
+            senal[i] /= factor;
+        }
+
+        var ctx = document.getElementById('grafico_senal').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: nombres,
+                datasets: [{
+                    label: 'Redes WiFi',
+                    data: senal,
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true, // Comienza en 0 en la parte inferior del eje y
+                            reverse: false // Evita la inversión del eje y
+                        }
+                    }]
+                }
+            }
+        });
+
+        // Función para contar la frecuencia de cada valor en la lista
+        function contarFrecuencia(lista) {
+            var counts = {};
+            lista.forEach(function(x) { counts[x] = (counts[x] || 0) + 1; });
+            return counts;
+        }
+
+        // Obtener la frecuencia de cada valor en senal
+        var frecuencia = contarFrecuencia(senal);
+
+        // Preparar datos para el gráfico de pastel
+        var labels = Object.keys(frecuencia);
+        var data = Object.values(frecuencia);
+
+        // Definir los colores hexadecimales para el gráfico de pastel
+        var colores = [
+            '#FF5733', // Naranja
+            '#FFC300', // Amarillo
+            '#4CAF50', // Verde
+            '#3498DB', // Azul
+            '#9B59B6', // Morado
+            // Agrega más colores si tienes más valores posibles
+        ];
+
+        // Crear el gráfico de pastel
+        var ctx = document.getElementById('grafico_senal_pie').getContext('2d');
+        var myPieChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: labels,
+                datasets: [{
+                    data: data,
+                    backgroundColor: colores,
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                title: {
+                    display: true,
+                    text: 'Gráfico de Pastel de Frecuencia de Datos'
+                }
+            }
+        });
+
+        var img = document.getElementById('background-img'); //fondo
+
+        var grafico_senal = document.getElementById('grafico_senal'); //grafico senal
+        var grafico_senal1 = document.getElementById('grafico_senal_pie'); //grafico senal1
+
+        var next = document.getElementById("button-next1");
+        var back = document.getElementById("button-back1");
+
+        function b_grafico_senal() {
+            if (img.style.display === 'block') {
+                img.style.display = 'none';
+                grafico_senal.style.display = 'block';
+                grafico_senal1.style.display = "none"
+                next.style.display = "block";
+                back.style.display = "none";
+            }
+            else{
+                img.style.display = 'block';
+                grafico_senal.style.display = 'none';
+                grafico_senal1.style.display = "none"
+                next.style.display = "none";
+                back.style.display = "none";
+            }
+        }
+
+        // Funciones para mostrar gráficos siguientes y anteriores
+        function mostrarGraficoSiguiente() {
+            if(grafico_senal.style.display = 'block'){
+                grafico_senal.style.display = 'none'
+                grafico_senal1.style.display = "block"
+                next.style.display = "none"
+                back.style.display = "block"
+            }
+        }
+
+        function mostrarGraficoAnterior() {
+            if(grafico_senal1.style.display = 'block'){
+                grafico_senal.style.display = 'block'
+                grafico_senal1.style.display = "none"
+                next.style.display = "block"
+                back.style.display = "none"
+            }
+        }
+
+        function b_grafico_banda() {
+            if(img.style.display === 'block' || grafico_senal.style.display === 'block' || grafico_senal1.style.display === 'block') {
+                img.style.display = 'none';
+                grafico_senal.style.display = 'none';
+                grafico_senal1.style.display = "none";
+                next.style.display = "none";
+                back.style.display = "none";
+            }
+            else{
+                img.style.display = 'none';
+                grafico_senal.style.display = 'none';
+                grafico_senal1.style.display = "none";
+                next.style.display = "none";
+                back.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+</html>

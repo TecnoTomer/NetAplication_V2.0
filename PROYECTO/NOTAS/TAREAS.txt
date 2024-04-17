@@ -1,0 +1,73 @@
+############# POR HACER #############
+
+#monitor de la ram, crear el scrip con las funciones donde se extraer ala informacion de la ram y luego la guardare en un json tipo logs de registro actual, diario, semanal mensual. y la mostrare en el programa, de forma analizada.
+
+#una pantalla dnonde mostrare toda la informacion de la red a la que testoy conectado actualmente, toda la informacion, direciones ip, dns, registros mx ect, etc, tambien informacion de cuantos equipos hay conectados sacando sus macks y toda la informacion disponible de esos host, y tabien crear una topologia con un modem o router que sera el de la ip del gateway que representara el moden y luego los equipos conectados con lineas y sus ip y nombres informacion que les pueda sacar con la herramienta esa de escaneo de redes.
+
+#en la opcion de escaneo de redes, wifi si ya existe un archivo ecel del escaneo viejo entonces asi como muestra esa informacion del testo de redes escaneadas, que las muestre en el output, crear un json, con esas varibales, que cuando de algun boton como actualizar output se cree el json o se reemplazen las varibales por los valores actuales, si aplico filtro igual se reemplcen los valores por los ctuales antes de aplicar el filtro, para asi cuando cambie de pesteaña y vuelva tome esos datos en esas varibales del json y los aplique para que se muestre como lo deje antes de cambiar pestaña!
+
+# LOGS
+-cuando agrege logs de los envios de correos configurarle los logs
+
+# funcion para monitorear, donde mostrare una region de dispositivos conectados entre si del socket y dando click en cada dispositivo mostar los datos y graficas de monitoreo de ese sistema.
+
+#funciones para monitoreo con scoket
+- crear una miniapp que se ejecute en segundo plano, en los iconos ocultos, esta app primeroestablecera la conecion socket con la ip del servidor principal, y luego recolectara datos del ordenador cada cierto tiempo, luego enviara estos datos al servidor principal en formato json, luego el servidor recivira los datos los guardara en una carpeta y creara registros y valores con los cuales luego mostar los datos recividos en texto o graficas.
+
+
+############# OPCIONES ESCANEO #############
+# LISTO
+	#1 - CUANDO INICE QUE EL OUTPUT SALGA EN BLANCO!
+
+
+	#2 - CUANDO PRESIONE "INICIAR ESCANEO"
+		- inice el scaneo, si la int esta apagada lanze error, muestre boton de reintentar!
+
+	#3 - CUANDO PRESIONE ACTUALIZAR SE MUESTRE EL OUTPUT, OSEA SE OBTENDRA EL ARCHIVO EXCEL Y SE CARGARAN LOS DATOS!:
+		- si no existe el archivo que muestre un mensaje "no hay datos por mostrar, realize el scaneo y intente de nuevo!"
+
+	#4 - CUANDO PRESIONE LIMPIAR OUTPUT SE LIMPIE EL OUTPUT:
+		- si no hay nada en output, muestre mensaje!
+
+	############# OPCIONES DE DATOS #############
+
+	#5 - EXPORTAR DATOS, SIMPLEMENTE COJA EL ARCHIVO EXCEL YA CREADO DESPUES DEL ESCANEO Y CREE UNA COPIA EN EN ESCRITORIO, SI EL ARCHIVO OUTPUT ESTA VACIDO DE ERROR Y NO EXPORTE NADA.
+
+	#6 - IMPORTAR DATOS, TRATAR QUE PUEDA SELECIONAR EL ARCHIVO YA EXPORTADO EN SOLO FORMATO .XLSX Y CARGUE SUS DATOS, MUESTRE MENSAJE EN PANTALLA SI SE IMPORTO Y LUEGO DE ACEPTAR SE MUESTREN LOS DATOS.
+
+	#7 - COPIAR TODO EL OUTPUT EN EL PORTAPAPELES PARA QUE LOS PUEDA PEGAR EN OTRO LADO, COPIAR TODAS LAS CELDAS DEL DOCUMENTO EXCEL.
+
+	#8 - DESPUES QUE SELECIONE COM EL MOUSE VARIAS CELDAS, COPIAR ESOS DATOS AL PORTAPAPELES.
+
+	#9 - ORDENAR DATOS DE LA A - Z PUEDO TRATAR DE APLICAR UN FILTRO EN EL EXCEL Y LUEGO VOLVER A CARGAR LOS DATOS.
+
+	#10 - FILTRAR POR MAYOR INTENSIDAD DE SEÑAL, PUEDO APLICAR EL FILTRO TAMBIEN EN EL ARVHIVO EXCEL.
+
+	#12 - PERMITIR SELECIONAR UNA OPCION DE SEGURIDAD
+
+	#13 - PERMITIR SELECIONAR UNA OPCION DE BANDA.
+
+	#14 - PERMITIR SELECIONAR UN CANAL.
+
+	#15 APLICAR FILTROS.
+
+	#SI NO HAY NADA EN EL OUTPUT NO SE PUEDA APLICAR NINGUN FILTRO
+	
+	# HACER QUE EN LA BARRA INFERIOR MUESTRE LA RED A LA QUE ESTOY CONECTADO ACTUALMENTE POR WIFI O ETHERNET Y QUE SE ACTULIZE, QUE MUESTRE NOMBRE, ESTADO DE LA CONEXCION, DRIVE DE RED, DIRECCION IP!
+
+	# SACAR DATOS DE LAS VARIABLES DE LOS ARCHIVOS DE RED! PARA USAR EN OTRAS COSAS! COMO EL DOMINIO ETC!
+
+	# HACER QUE EN WIRELESS MUESTRE TEXTO EN LA PARTE DE LOS BOTONES, DONDE PUEDA VER CUANTAS REDES SE ESCANEARON, CUANTAS REDES HAY EN EL OUTPUT Y CUANTAS HAY SELECIONADAS!
+
+	# HACER QUE EL SCRIPT DE TEST DE RX Y TX SE EJECUTE EN UN SEGUNDO PLANO Y LUEGO QUE CIERRE EL PROGRAMA SE MATE ESE PROCESO!
+
+	#HACER QUE LA FUNCION COPIAR DATOS DE KEY_COMANDS.PY, SOLO ESTE DISPONIBLE SI LA VENTANA CON EL NOMBRE NETAPLICATIONV2 ESTA ACTIVO, ASI NO PERMITIR QUE CUANDO NO ESTA ACTIVA Y TENGA OTRA VENTANA EN PRIMER PLANO SE PUEDAN COPIAR LOS DATOS DE OUTPUT Y ME DEJE COPIAR LOS DE LA VENTANA QUE ESTA EN PRIMER PLANO!
+
+	#CREAR UNA VENTANA SIN BOTONES SOLO UNA IMAGEN DONDE SE MUESTRE POR UNOS SEGUNOS LA IMAGEN DE INCIO Y EN ELLA SE MUESTRE EL TITULO DE LA APP Y INFORMACION DEL USUARIO
+
+	#CREAR UNA FUNCION PARA REGISTRAR LOGS DURANTE LA EJECUION DELPROGRAMA!
+
+	#CREAR UNA FUNCION DONDE MOSTRAR GRAFICAS CON BASE A LAS REDES DEL ESCANEO WIFI Y EN LA PARTE DEL ESCANEO CREAR BOTON QUE ME LLAME ESTA FUNCION DE GRAFICAS, TAMBIEN PONER QUE SE PUEDA TOMAR CAPTURA Y GUARDARLA!
+
+	#AGREGAR FUNCION AL BOTON DE BATTERY MONITOR PAR QUE GENERE EL REPORTE EN EL PUERTO 8000 DEL NAVEGADOR
+	

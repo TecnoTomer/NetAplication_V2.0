@@ -1,0 +1,47 @@
+# Alertas.py:
+	Este script usa la liberia ctypes que me permite general alertas o pequeñas ventanas de alerta con mensajes en windows, tiene varias funciones dependiendo la alerta que quiera mostrar!
+
+# Compilador.py:
+	Este script usa las liberias de sys y cx_Freeze, que me permiten compilar la aplicacion en un archivo .exe para windows.
+
+# Key_comands.py:
+	Este script creo funciones para darle mas funcionabilidad al programa con convinacion de teclas!
+
+# Menu_funciones:
+	Este script manejo funciones para todo el tema de sub menus de la barra superior, y botones de la barra superior, y el cambio entre ventanas!
+
+# Net_datos_funciones.py:
+	En este escript, tengo todas las funciones que me mostraran informacion sobre la conexcion actual a la red que tengo ya sea wireless o ethernet la cual es informacion que se muestra en la barra inferior!
+
+# NetAplicationV2.py:
+	Este es el programa principal donde se inicializa todo!
+
+# Pantalla_p_funciones.py
+	Este script tengo las funciones de barra inferior y superior, y funciones que detectan cuando se cierra la app desde el boton X de windows!
+
+# Perzonalizacion_botones.py:
+	Este script tengo funciones de los iconos de ayuda que salen al lado de cada boton donde se muestra para que sirve, y estilos cuando paso el mouse sobre los botones!
+
+# Variables.py:
+	Aqui tengo todas las variables de forma global para poder hacer uso de ellas desde otros documentos de forma mas clara y rapida, tambien la funcion de obtener la fech ay hora que se actualiza en la barra inferior!
+
+# Wireless_funciones.py:
+	Este scrip contiene toda la creacion y datod de UI que se mostraran en la interfaz de escaneo wireless, botones etc.
+
+# Wireless_scanner.py:
+	En este script estas todas las funciones que obtendran los datos del escaneo de las redes, y funciones de los botones que se muesran en wireless_funciones.py!
+
+# Mail_funciones.py:
+	Este script tengo todas la funciones donde se usa el servicio de correo para enviar menajes o informacion!
+
+# Logs:
+	Este script para general logs amedida que se usa la aplicacion!
+
+#Screen_Holdin.py:
+	Este script tiene la ventana de holding que carga antes del programa donde se muestra imagen de incio con datos del usuario!
+
+#Conexiones_funciones.py:
+	Este script contiene todas las funciones necesarias para la ventana de conexiones!
+
+#Requirements.txt:
+	Este archivo contiene las bibliotecas externas de python necesarias para el proyecto!
