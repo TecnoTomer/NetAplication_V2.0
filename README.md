@@ -25,7 +25,7 @@
    ![ICONO](https://github.com/emerson199818/NetAplication_V2/blob/main/PROYECTO/DIAGRAMAS/Capturas/c_7.PNG)
 
         - Hosts:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2/blob/main/PROYECTO/DIAGRAMAS/Capturas/c_10.PNG)
+   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fc_10.PNG)
 
            - Modos conexion:
    ![ICONO](https://github.com/emerson199818/NetAplication_V2/blob/main/PROYECTO/DIAGRAMAS/Capturas/c_11.PNG)
@@ -56,7 +56,7 @@
    ![ICONO](https://github.com/emerson199818/NetAplication_V2/blob/main/PROYECTO/DIAGRAMAS/Capturas/w_2.PNG)
    
    		- Panel OutPut:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2/blob/main/PROYECTO/DIAGRAMAS/Capturas/1.PNG)
+   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2F1.PNG)
 
          - Opcion de Graficas:
    ![ICONO](https://github.com/emerson199818/NetAplication_V2/blob/main/PROYECTO/DIAGRAMAS/Capturas/g_1.PNG)
