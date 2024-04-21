@@ -44,37 +44,37 @@
    		- Barra superior con botones de funciones!
    		- Barra inferior con muestra de informacion importante y util sobre tu conexion actual, fecha y hora, muy completa!
 
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2/blob/main/PROYECTO/DIAGRAMAS/Capturas/w_4.PNG)
+   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fw_4.PNG)
    
    		- Opciones de filtros basados en todos los datos obtenidos.
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2/blob/main/PROYECTO/DIAGRAMAS/Capturas/w_3.PNG)
+   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fw_3.PNG)
    
    		- Opciones de escaneo:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2/blob/main/PROYECTO/DIAGRAMAS/Capturas/w_1.PNG)
+   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fw_1.PNG)
    
    		- Opciones de tratado de datos:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2/blob/main/PROYECTO/DIAGRAMAS/Capturas/w_2.PNG)
+   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fw_2.PNG)
    
    		- Panel OutPut:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2F1.PNG)
+   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fg_1.PNG)
 
          - Opcion de Graficas:
    ![ICONO](https://github.com/emerson199818/NetAplication_V2/blob/main/PROYECTO/DIAGRAMAS/Capturas/g_1.PNG)
 
          - Grafica por intensidad señal:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2/blob/main/PROYECTO/DIAGRAMAS/Capturas/g_2.PNG)
+   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fg_2.PNG)
 
          - Grafica por frecuencias:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2/blob/main/PROYECTO/DIAGRAMAS/Capturas/g_3.PNG)
+   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fg_3.PNG)
 
          - Grafica por bandas:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2/blob/main/PROYECTO/DIAGRAMAS/Capturas/g_4.PNG)
+   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fg_4.PNG)
 
          - Grafica por chanales:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2/blob/main/PROYECTO/DIAGRAMAS/Capturas/g_5.PNG)
+   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fg_5.PNG)
 
          - Grafica por senal_vs_canal:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2/blob/main/PROYECTO/DIAGRAMAS/Capturas/g_6.PNG)
+   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fg_6.PNG)
 
 
 # Notas:
