@@ -19,20 +19,20 @@
 
 
         - Dispositivos:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2/blob/main/PROYECTO/DIAGRAMAS/Capturas/c_6.PNG)
+   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fc_6.PNG)
 
         - Establecer conexion:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2/blob/main/PROYECTO/DIAGRAMAS/Capturas/c_7.PNG)
+   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fc_7.PNG)
 
         - Hosts:
    ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fc_10.PNG)
 
            - Modos conexion:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2/blob/main/PROYECTO/DIAGRAMAS/Capturas/c_11.PNG)
+   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fc_11.PNG)
 
         - Conexion extablecida test:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2/blob/main/PROYECTO/DIAGRAMAS/Capturas/c_12.PNG)
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2/blob/main/PROYECTO/DIAGRAMAS/Capturas/c_13.PNG)
+   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fc_12.PNG)
+   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fc_13.PNG)
 
     Monitores:
     	Wireless Monitor:
