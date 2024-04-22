@@ -70,6 +70,9 @@
          - Grafica por senal_vs_canal:
    ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fg_6.PNG)
 
+         - Barra inferior con información de conexcion actual:
+   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fw_4.PNG)
+
 
 # Notas:
     #===================================================================================#
