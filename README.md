@@ -44,7 +44,7 @@
    		- Barra superior con botones de funciones!
    		- Barra inferior con muestra de informacion importante y util sobre tu conexion actual, fecha y hora, muy completa!
 
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fw_4.PNG)
+   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2F1.PNG)
    
    		- Opciones de filtros basados en todos los datos obtenidos.
    ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fw_3.PNG)
