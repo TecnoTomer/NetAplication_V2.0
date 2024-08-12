@@ -1,87 +1,103 @@
-# NetAplication_V2
- Update con interface grafica de Netaplication beta 1.0.
- Esta aplicacion tiene como fin ser un sistema de administracion, conexiones 
-	y configuracion de redes, y sistemas operativos en general, herramienta en 
-	proseso de desarrollo los avances de nuevas funciones y demas actualizacion 
-	se veran viendo reflajadas en este repositorio publico!
+# 🌐 NetApplication V2
 
-# Funciones:
-    Home:
+¡Bienvenido a **NetApplication V2**! 🎉 Esta aplicación ahora cuenta con una interfaz gráfica mejorada de la versión beta 1.0. Su propósito es ser un sistema integral para la administración, conexión y configuración de redes y sistemas operativos en general. Este proyecto está en desarrollo continuo, y podrás ver los avances reflejados en este repositorio público.
 
-    Conexiones: 
-        Muy util y seguro con encriptacion de datos y perfiles a la hora de crear la conexion ssh o telnet en tus sistemas, y equipos activos, modo administracion y modo consulta.
+## 🚀 Funciones
 
-        - Este programa posee funciones de conexion SSH y telnet por el momento.
-        - Funciones de crear perfil.
-        - Exportar un perfil con formato encriptado.
-        - Importar un perfil guardado.
-        - Limpiar formulario de campos y limpiar registro de perfiles cargados.
+### 🏠 Home
 
+### 🔗 Conexiones
 
-        - Dispositivos:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fc_6.PNG)
+NetApplication V2 te ofrece una herramienta segura y eficiente para gestionar tus conexiones de red con las siguientes funcionalidades:
 
-        - Establecer conexion:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fc_7.PNG)
+- **Conexión SSH y Telnet:** Conexiones seguras gracias a la encriptación de datos y perfiles. Ideal para administración y consultas en tus sistemas y dispositivos activos.
+  
+- **Características principales:**
+  - Crear y gestionar perfiles.
+  - Exportar e importar perfiles en formato encriptado.
+  - Limpiar formularios y registros de perfiles cargados.
 
-        - Hosts:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fc_10.PNG)
+#### 📱 Dispositivos
 
-           - Modos conexion:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fc_11.PNG)
+![Dispositivos](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fc_6.PNG)
 
-        - Conexion extablecida test:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fc_12.PNG)
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fc_13.PNG)
+#### 🔌 Establecer conexión
 
-    Monitores:
-    	Wireless Monitor:
-    	Muy util para ver informacion de las redes a tu alrededores informacion la cual no siempre esta disponible y que es muy util a la hora de analisis y implementacion de otras redes o proyectos!
+![Establecer Conexión](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fc_7.PNG)
 
-    	Este monitor de redes inalambricas, puedes ver la siguientes variables sobre las redes de tualrededor como:
-   		- SSID, BSSID, SEÑAL, CANAL, FRECUENCIA, BANDA, SEGURIDAD, DE LOS EQUIPOS "MODEM's-HOME".
-   		- A la hora de implementar una red wireless puedes analizar que canales estan mas congestinados, realizando un escaneo el cual depende de las caracteristicas de tu tarjeta de red en tu equipo host!
-   		- Barra superior con botones de funciones!
-   		- Barra inferior con muestra de informacion importante y util sobre tu conexion actual, fecha y hora, muy completa!
+#### 🌐 Hosts
 
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2F1.PNG)
-   
-   		- Opciones de filtros basados en todos los datos obtenidos.
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fw_3.PNG)
-   
-   		- Opciones de escaneo:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fw_1.PNG)
-   
-   		- Opciones de tratado de datos:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fw_2.PNG)
+![Hosts](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fc_10.PNG)
 
-         - Grafica por intensidad señal:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fg_2.PNG)
+#### 🔄 Modos de Conexión
 
-         - Grafica por frecuencias:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fg_3.PNG)
+![Modos de Conexión](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fc_11.PNG)
 
-         - Grafica por bandas:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fg_4.PNG)
+#### ✅ Conexión Establecida (Test)
 
-         - Grafica por chanales:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fg_5.PNG)
+![Conexión Establecida](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fc_12.PNG)
+![Conexión Establecida](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fc_13.PNG)
 
-         - Grafica por senal_vs_canal:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fg_6.PNG)
+### 📡 Monitores
 
-         - Barra inferior con información de conexcion actual:
-   ![ICONO](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fw_4.PNG)
+#### 📶 Wireless Monitor
 
+Este monitor es una herramienta indispensable para obtener información sobre las redes inalámbricas a tu alrededor. Útil para análisis e implementación de otras redes o proyectos.
 
-# Notas:
-    #===================================================================================#
-    	Esta aplicacion tiene como fin ser un sistema de administracion, conexiones 
-    	y configuracion de redes, y sistemas operativos en general, herramienta en 
-    	proseso de desarrollo los avances de nuevas funciones y demas actualizacion 
-    	se veran viendo reflajadas en este repositorio publico!
-    #===================================================================================#
+- **Variables de red disponibles:**
+  - **SSID, BSSID, Señal, Canal, Frecuencia, Banda, Seguridad** de dispositivos "Modem's-Home".
+  - Analiza la congestión de canales para una implementación óptima de redes.
+  - Barra superior con botones funcionales.
+  - Barra inferior que muestra información de tu conexión actual, fecha y hora.
 
-# Link Descarga:
-    Not Yet! it will coming soon!
+![Wireless Monitor](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2F1.PNG)
 
+#### 🔍 Opciones de Filtros
+
+![Filtros](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fw_3.PNG)
+
+#### 🔎 Opciones de Escaneo
+
+![Escaneo](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fw_1.PNG)
+
+#### 📊 Tratamiento de Datos
+
+![Tratamiento de Datos](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fw_2.PNG)
+
+#### 📈 Gráficos
+
+- **Por Intensidad de Señal:**
+
+  ![Gráfico Intensidad Señal](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fg_2.PNG)
+
+- **Por Frecuencias:**
+
+  ![Gráfico Frecuencias](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fg_3.PNG)
+
+- **Por Bandas:**
+
+  ![Gráfico Bandas](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fg_4.PNG)
+
+- **Por Canales:**
+
+  ![Gráfico Canales](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fg_5.PNG)
+
+- **Señal vs Canal:**
+
+  ![Gráfico Señal vs Canal](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fg_6.PNG)
+
+#### ℹ️ Barra Inferior
+
+Muestra información importante sobre la conexión actual.
+
+![Barra Inferior](https://github.com/emerson199818/NetAplication_V2.0/blob/main/PROYECTO%2FDIAGRAMAS%2FCapturas%2Fw_4.PNG)
+
+## 📝 Notas
+
+> Esta aplicación está diseñada para ser un sistema de administración de conexiones y configuración de redes, además de sistemas operativos en general. Está en constante desarrollo, y podrás ver las actualizaciones y nuevas funciones reflejadas en este repositorio público.
+
+## 🔗 Enlace de Descarga
+
+**Próximamente... ¡estén atentos!**
+
+---
